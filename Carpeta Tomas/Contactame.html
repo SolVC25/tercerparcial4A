@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sol.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Marisol Cortez</title>
+</head>
+<body>
+    <header>
+        Aqui va ir banner
+    </header>
+    <nav>
+        Aqui van a ir los hipervinculos
+    </nav>
+    <section>
+        <article>
+            aqui voy a poner mentiras 1
+        </article>
+        <article>
+            mas mentiras
+        </article>
+    </section>
+    <aside>
+        aqui voy a poner imagenes
+    </aside>
+    <footer>
+        <div class="copyright">
+       <p>&copy; <span id="year">Derechos reservados.</span></p>
+
+       <i class="fa fa-facebook" aria-hidden="true"></i>
+<h2>Contactame</h2>
+<p>Si estas interesado en contactarme, puedes hacerlo a travez de cualquiera de las siguientes redes sociales.</p>
+<div class="contact-links">
+<a href="https://www.faceboock.com/miperfil" target="_blank"><i class="fab fa-faceboock"></i></a>
+<a href="https://www.instagram.com/miperfil" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.twitter.com/miperfil" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="https://www.discord.com/miperfil" target="_blank"><i class="fab fa-discord"></i></a>
+</div>
+
+
+
+
+<script>
+  const redessociales=document.querySelectorAll('.contact-links');
+  redessociales.forEach(link =>{
+      link.addEventListener('click', e=>{
+      e.preventDefault();
+      window.open(link.href, '_blank');
+  });
+  });
+</script>
+   </footer>
+    <script>
+        let year = document.getElementById('year');
+        let dynamicYear = new Date ().getFullYear();
+        year.innerHTML=dynamicYear;
+    </script>
+</body>
+</html>
