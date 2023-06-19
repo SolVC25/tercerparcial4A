@@ -1,0 +1,37 @@
+.Calc{
+    width: 30%;
+    height: 60%;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#ans{
+    width: 90%;
+    align-content:center;
+    margin-top: 20px;
+    font-family:Arial;
+    font-size: 20px;
+    color: darkblue;
+    text-align: right;
+}
+.btn input[ type='button']{
+    width: 70px;
+    padding: 2px;
+    margin: 4px;
+    position: relative;
+    left: 23px;
+    top: 20px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    background-color:transparent;
+    border-radius: 6px;
+}
+.btn input[type='button']:hover{
+    background-color: rgb(1, 96, 185);
+    color: rgb(187, 7, 7)
+};

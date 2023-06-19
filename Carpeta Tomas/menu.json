@@ -1,0 +1,254 @@
+{ 
+    "menu": [
+    {
+    "nombre": "Pizza",
+    "descripcion": "Peperoni, Hawaiana, Clasica",
+    "precio": 8.99,
+    "image": "img/pizza.jpg"
+    },
+    
+    {
+    "nombre": "Hamburguesa",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 10.99,
+    "image": "img/hamburguesa.jpg"
+    },
+    
+    {
+    "nombre": "HotDog",
+    "descripcion": "Clásico, Mediano, Jumbo",
+    "precio": 13.99,
+    "image": "img/hotdog.jpg"
+    },
+    
+    {
+    "nombre": "Mole",
+    "descripcion": "Picante, Dulse",
+    "precio": 8.99,
+    "image": "img/mole.jpg"
+    },
+    
+    {
+    "nombre": "Sincronizada",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 9.99,
+    "image": "img/sincronizada.jpg"
+    },
+    
+    {
+    "nombre": "Sopa",
+    "descripcion": "Fideos, Coditos, Fría, Caliente",
+    "precio": 5.99,
+    "image": "img/sopa.jpg"
+    },
+    
+    {
+    "nombre": "Arroz",
+    "descripcion": "Caliente, Frio, Mediano, Grande",
+    "precio": 12.99,
+    "image": "img/arroz.jpg"
+    },
+    
+    {
+    "nombre": "Huevo",
+    "descripcion": "Estrellados, Fritos, Homelet",
+    "precio": 6.99,
+    "image": "img/huevo.jpg"
+    },
+    
+    {
+    "nombre": "Espagueti",
+    "descripcion": "Clásico, Mediano, Jumbo",
+    "precio": 10.99,
+    "image": "img/espagueti.jpg"
+    },
+    
+    {
+    "nombre": "Tortas",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 10.99,
+    "image": "img/tortas.jpg"
+    },
+    
+    {
+    "nombre": "Tacos",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 15.99,
+    "image": "img/tacos.jpg"
+    },
+    
+    {
+    "nombre": "Flautas",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 4.99,
+    "image": "img/flautas.jpg"
+    },
+    
+    {
+    "nombre": "Tostadas",
+    "descripcion": "Clásica, Mediana, Jumbo, Fritas",
+    "precio": 4.55,
+    "image": "img/tostadas.jpg"
+    },
+    
+    {
+    "nombre": "Chilaquiles",
+    "descripcion": "Salados, Fritos, Cosidos",
+    "precio": 18.99,
+    "image": "img/chilaquiles.jpg"
+    },
+    
+    {
+    "nombre": "Sopes",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 3.99,
+    "image": "img/sopes.jpg"
+    },
+    
+    {
+    "nombre": "Albondigas",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 2.99,
+    "image": "img/albondigas.jpg"
+    },
+    
+    {
+    "nombre": "Nuguets",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 7.99,
+    "image": "img/nuguets.jpg"
+    },
+    
+    {
+    "nombre": "Tamales",
+    "descripcion": "Veracruzano, Dedo, Elote",
+    "precio": 5.99,
+    "image": "img/tamales.jpg"
+    },
+    
+    {
+    "nombre": "Macarrones",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 10.99,
+    "image": "img/macarrones.jpg"
+    },
+    
+    {
+    "nombre": "Ensalada",
+    "descripcion": "Clásica, Mediana, Jumbo",
+    "precio": 10.99,
+    "image": "img/ensalada.jpg"
+    }
+    ],
+    
+    
+    "Extras": [
+    {
+    "nombre": "Salsa de Tomate",
+    "descripcion": "Salsa de Tomate Verde o Rojo",
+    "precio": 8.99 ,
+    "image": "img/salsadetomate.jpg"
+    },
+    
+    {
+    "nombre": "Salsa Verde",
+    "descripcion": "Chile morrón, Chile verde, Rajas",
+    "precio": 10.55,
+    "image": "img/salsaverde.jpg"
+    },
+    
+    {
+    "nombre": "Salsa Roja",
+    "descripcion": "Chile morrón, Chile guajillo, Tomate",
+    "precio": 33.99,
+    "image": "img/salsaroja.jpg"
+    },
+    
+    {
+    "nombre": "Chiles",
+    "descripcion": "Rajas, Enteros, Jalapeños",
+    "precio": 10.99,
+    "image": "img/chiles.jpg"
+    },
+    
+    {
+    "nombre": "Guacamole",
+    "descripcion": "Aguacate, Cebolla, Cilantro",
+    "precio": 1.99,
+    "image": "img/guacamole.jpg"
+    },
+    
+    {
+    "nombre": "Tortillas",
+    "descripcion": "Maíz, Trigo, Masa",
+    "precio": 11.99,
+    "image": "img/tortillas.jpg"
+    },
+    
+    {
+    "nombre": "Cebolla",
+    "descripcion": "Clásica, Morada, Verde",
+    "precio": 3.99,
+    "image": "img/cebolla.jpg"
+    },
+    
+    {
+    "nombre": "Sal",
+    "descripcion": "Sal fina, Sal molida",
+    "precio": 7.99,
+    "image": "img/sal.jpg"
+    },
+    
+    {
+    "nombre": "Pimienta",
+    "descripcion": "Pimienta entera, Pimienta molida, Pimienta fina",
+    "precio": 3.99,
+    "image": "img/pimienta.jpg"
+    },
+    
+    {
+    "nombre": "Queso",
+    "descripcion": "Queso Oaxaca, Queso Cheddar",
+    "precio": 30.99,
+    "image": "img/queso.jpg"
+    }
+    ],
+    
+    
+    "Bebidas":[
+    {
+    "nombre": "Coca",
+    "descripcion": "Lite, Sin Gas, Sin azucar",
+    "precio": 20.99,
+    "image": "img/coca.jpg"
+    },
+    
+    {
+    "nombre": "Agua",
+    "descripcion": "Natural, Oxigenada, Manantial",
+    "precio": 2.99,
+    "image": "img/agua.jpg"
+    },
+    
+    {
+    "nombre": "Pepsi",
+    "descripcion": "Lite, Sin Gas, Sin azucar",
+    "precio": 20.99,
+    "image": "img/pepsi.jpg"
+    },
+    
+    {
+    "nombre": "Fabta",
+    "descripcion": "Lite, Sin Gas, Sin azucar",
+    "precio": 10.99,
+    "image": "img/fanta.jpg"
+    },
+    
+    {
+    "nombre": "Joya",
+    "descripcion": "Lite, Sin Gas, Sin azucar",
+    "precio": 10.99,
+    "image": "img/joya.jpg"
+    }
+    ]
+}

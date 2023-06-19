@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<title>Pagina 1</title>
+</head>
+<body>
+  <div style="margin: 24px;">
+  	<nav class="navbar navbar-inverse navbar-stick-static-top">
+  		<div class="container">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index - copia.html">inicio</a>
+                </li>
+                <li class="active">
+                    <a href="Menu - copia.html">menu</a>
+                </li>
+                <li>
+                    <li>
+                    <a href="Pedido - copia.html">pedido</a>
+                </li>
+                <li>
+                    <a href="Contacto - copia.html">contacto</a>
+                </li>
+                <li>
+                  <a href="calculadorafisica.html">Calculadora</a>
+              </li>
+           </ul>
+  		</div>
+  	</nav>
+  </div>
+  <h1 style="text-align: center;">Menu</h1>
+  <div id="menu"></div>
+  <script>
+    fetch('menu.json')
+    .then(response => response.json())
+    .then(data =>{
+      const table = document.createElement('table');
+      tabla.innerHTML=`
+      <thead>
+               <tr>
+               <th>Categoria</th>
+               <th>Imagen</th>
+               <th>Producto</th>
+               <th>Descripción</th>
+               <th>Precio</th>
+               <th>Selección</th>
+               </tr>
+       </thead>
+       <tbody></tbody>`;
+       document.getElementById('menu').appendChild(tabla);
+       
+   Object.keys(data).forEach( categoria =>{
+   data[categoria].forEach(producto =>{
+    const fila=document.createElement('tr');
+    fila.innerHTML=`
+         <td>${categoria}</td>
+         <td><img src="${producto.imagen}" alt="${producto.name}"></td>
+         <td>${producto.nombre}</td>  
+         <td>${producto.descripcion}</td>
+         <td>${producto.precio}</td>
+         <td><input type="checkbox" class="producto" data-precio="${producto.nombre}"></td>
+         `;
+         tabla.querySelector('tbody').appendChild(fila);
+   });
+   });
+   
+   const producto=document.querySelectorAll('producto');
+   productos.forEaxh(producto =>{
+   producto.addEventListener('change', () =>{
+   let suma=0;
+   productos.forEach(producto => {
+   if(producto.checked){
+   suma=parseFloat(producto.dataset.precio);
+   }
+   });
+   document.getElementById('resultado').innerHTML=`<h1>TOTAL: ${suma.toFixed(2)}</h1>`;
+   });
+   });
+   })
+   .catch(error=>console.error(error));
+   </script>
+</body>
+</html>
