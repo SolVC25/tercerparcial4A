@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/thunderstrike" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Pedido</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+    <div style="margin: 24px;">
+        <nav class="navbar navbar-inverse navbar-stick-static-top">
+            <div class="container">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">Inicio</a>
+          </li>
+          <li>
+              <a href="Menu.html">Menu</a>
+          </li>
+              <li  class="active">
+              <a href="pedido.html">Pedido</a>
+          </li>
+          <li>
+            <a href="">Resultado</a>
+        </li>
+          <li>
+            <a href="Apimovies Original.html
+            ">Buscador de Peliculas</a>
+          </li>
+          <li>
+            <a href="calculadora.html">Calculadora</a>
+        </li>
+        <li>
+          <a href="calculadorafisica.html">Calculadora de Fisica</a>
+        </li>
+        <li class="">
+          <a href="Cuestionario.html">Cuestionario</a>
+        </li>
+             </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="pedido.html">Pedido</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+    <form method="post" action="./pedidorealizado.php">
+       <div class="right"><h1>Pedido</h1>
+       
+        <label for="nombre">▸Nombre:</label>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre"></input><br>
+        
+        <label for="apellido">▸Apellido:</label>
+        <input type="text" name="apellido" placeholder="Escribe tu apellido"></input><br>
+        
+        <label for="telefono">▸Telefono:</label>
+        <input type="text" name="telefono" placeholder="Escribe tu numero"></input><br>
+        
+        <label for="direccion">▸Direccion:</label>
+        <input type="text" name="direccion" placeholder="Escribe tu direccion"></input><br>
+        
+
+            <label for="opciones">▸Opciones</label>
+            <select name="opciones">
+                <option disabled="">Selecciona una opcion</option>
+                <option value="Boneless">Boneless</option>
+                <option value="Jochos">Jochos</option>
+                <option value="Nuggets">Nuggets</option>
+                <option value="Tacos">Tacos</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burritos">Burritos</option>
+            </select></div>
+
+            <img class="imagen-1" src="imagenes/spidermancomiendo1.jpg">
+            <div class="right-2"><h2>Complementos</h2>
+<label for="salsas">◆Salsas</label>
+<input type="checkbox" name="check_list[]" value="Salsas"></input><br>
+
+<label for="crujientes">◆Crujientes</label>
+<input type="checkbox" name="check_list[]" value="Crujientes"></input><br>
+
+<label for="encurtidos">◆Encurtidos</label>
+<input type="checkbox" name="check_list[]" value="Encurtidos"></input><br>
+
+<label for="papas">◆Papas Fritas</label>
+<input type="checkbox" name="check_list[]" value="Papas"></input><br>
+
+<label for="tortillas">◆Tortillas</label>
+<input type="checkbox" name="check_list[]" value="Tortillas"></input><br>
+
+<br><input type="reset" name="limpiar" value="Borrar" class="button"></input>
+<button type="submit" class="button" name="submit">Enviar Pedido</button>
+</div>
+    </form>
+    
+</body>
+</html>

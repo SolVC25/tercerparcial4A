@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<title>Pagina 1</title>
+</head>
+<body>
+  <div style="margin: 24px;">
+    <nav class="navbar navbar-inverse navbar-stick-static-top">
+        <div class="container">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="index.html">Inicio</a>
+      </li>
+      <li>
+          <a href="Menu.html">Menu</a>
+      </li>
+          <li>
+          <a href="pedido.html">Pedido</a>
+      </li>
+      <li>
+        <a href="">Resultado</a>
+    </li>
+      <li>
+        <a href="Apimovies Original.html
+        ">Buscador de Peliculas</a>
+      </li>
+      <li>
+        <a href="Calculadora.html">Calculadora</a>
+    </li>
+    <li class="active">
+      <a href="calculadorafisica.html">Calculadora de Fisica</a>
+    </li>
+    <li class="">
+      <a href="Cuestionario.html">Cuestionario</a>
+    </li>
+         </ul>
+        </div>
+    </nav>
+</div>
+
+  <div style="margin: 24px;">
+
+        <div class="jumbotron">
+            <h1 class="display-4">CALCULADORA FISICA 1</h1>
+            <p class="lead">Fundamentación Teórica La Física es la ciencia que estudia las propiedades de la materia, radiación y energía en todas sus formas, con base en el Método Científico, utilizando un lenguaje matemático. Estudia las estructuras observables microscópicas, mesoscópicas y macroscópicas.</p>
+            
+            <form id="formulario">
+                <label for="distancia">Distancia:</label>
+                <input type="text" id="distancia" name="distancia">
+                <select id="distanciaUnidad">
+                    <option value="metros" style="color: #b9a21b" >metros</option>
+                    <option value="pies" style="color: #b9a21b" >pies</option>
+                </select>
+<br>
+<label for="tiempo">Tiempo:</label>
+<input type="text" id="tiempo" name="tiempo">
+<select id="tiempoUnidad">
+<option value="segundos" style="color: #b9a21b" >segundos</option>
+<option value="horas" style="color: #b9a21b" >horas</option>
+</select>
+<br>
+
+<label for="velocidadUnidad">Unidades de Velocidad:</label>
+<select id="velocidadUnidad">
+<option value="metros_por_segundo" style="color: #b9a21b">m/s</option>
+<option value="pies_por_segundo" style="color: #b9a21b">ft/s</option>
+<option value="kilometros_por_segundo" style="color: #b9a21b">km/s</option>
+<option value="millas_por_segundo" style="color: #b9a21b">mph/s</option>
+</select>
+<br>
+<br>           
+        <button type="button" value="Calcular" onclick="Calcular()" class="btn btn-success">Calcular</button>
+            </form>
+            <br>
+            <p id="resultado"></p>
+            <p style="color: rgb(16, 35, 207); background-color: rgb(83, 168, 238)";>Velocidad: <span id="velocidad"></span></p>
+            <p style="color: rgb(4, 48, 196); background-color: rgb(83, 168, 238)">Aceleracion: <span id="aceleracion"></span></p>
+            <p style="color: rgb(16, 29, 207); background-color: rgb(83, 168, 238)">Rapidez: <span id="rapidez"></span></p>
+</div>
+<script>
+    function Calcular(){
+       //obtener los valores del formulario
+       const distancia=parseFloat(document.getElementById('distancia').value);
+       const tiempo=parseFloat(document.getElementById('tiempo').value);
+       const distanciaUnidad=document.getElementById('distanciaUnidad').value;
+       const tiempoUnidad=document.getElementById('tiempoUnidad').value;
+       const velocidadUnidad=document.getElementById('velocidadUnidad').value;
+       //convertir unidades a sistema metrico(SI)
+
+       let distanciaSI= 0;
+       let tiempoSI= 0;
+       if (distanciaUnidad==='metros'){
+        distanciaSI = distancia;
+       }
+       else if (distanciaUnidad === 'pies'){
+        distanciaSI = distancia /3.281;
+       }
+
+
+       if(tiempoUnidad==='segundos'){
+        tiempoSI=tiempo;
+       }
+       else if (tiempoUnidad==='horas'){
+        tiempoSI = tiempo * 3600;
+       }
+
+       //Calcular la velocidad, la aceleracion y rapidez
+       let velocidad = 0;
+       let aceleracion = 0;
+       let rapidz = 0;
+       if(velocidadUnidad==='metros_por_segundo'){
+        velocidad = distanciaSI / tiempoSI;
+        rapidez = velocidad; //esta no es la formula
+        aceleracion = velocidad / tiempoSI; 
+       }
+       else if(velocidadUnidad==='pies_por_segundo'){
+        velocidad = (distancia * 3.281) / tiempoSI;
+        rapidez = velocidad;//esta no es la formula
+        aceleracion = velocidad / tiempoSI;
+       }
+       else if(velocidadUnidad==='kilometros_por_hora'){
+        velocidad = (distancia * 1000) / (tiempoSI/3600);
+        rapidez = velocidad;//esta no es la formula
+        aceleracion = velocidad / tiempoSI;
+       }
+       else if(velocidadUnidad==='millas_por_hora'){
+        velocidad = (distancia * 1609) / (tiempoSI/3600);
+        rapidez = velocidad;//esta no es la formula
+        aceleracion = velocidad / tiempoSI;
+       }
+       //mostrar resultados
+       let resultado = '';
+       document.getElementById('velocidad').textContent = velocidad.toFixed(2) + ' ' + velocidadUnidad;
+       document.getElementById('aceleracion').textContent = aceleracion.toFixed(2) + ' ' + velocidadUnidad;
+       document.getElementById('rapidez').textContent = rapidez.toFixed(2) + ' ' + velocidadUnidad;
+
+       document.getElementById('resultado').innerHTML=resultado;
+    }
+    
+</script>
+
+<div id="footer"></div> 
+<script>
+    $(function(){
+        $("$footer").load(/PROFE TOMAS/foother.html)
+    });
+</script>
+
+</body>
+</html>
